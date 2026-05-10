@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794853550132",
+    "project_id": "kelompok2-project-app",
+    "storage_bucket": "kelompok2-project-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794853550132:android:093a9e728c30f444910261",
+        "android_client_info": {
+          "package_name": "com.kelompok2.gomeseumsulsel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk3Y4O7zYS4C_a_6LUYyfiAwKh2EgOFbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

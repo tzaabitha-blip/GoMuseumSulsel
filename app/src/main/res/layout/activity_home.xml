@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Pilih Kategori Museum"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- 1. Museum Sejarah -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bentengroterdam" /> <!-- Ganti dengan nama file fotomu -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Museum Sejarah"
+            android:textColor="#1A1A40"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/btnMasukSejarah"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button_masuk"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="Masuk"
+            android:textColor="@color/black" />
+
+        <!-- 2. Museum Budaya -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/museumbudaya" /> <!-- Ganti dengan file foto budaya kamu -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Museum Budaya"
+            android:textColor="#1A1A40"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/btnMasukBudaya"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_masuk"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="Masuk"
+            android:textColor="@color/black" />
+
+        <!-- 3. Museum Kerajaan -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/museumkerjaan" /> <!-- Ganti dengan file foto kerajaan kamu -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Museum Kerajaan"
+            android:textColor="#1A1A40"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/btnMasukKerajaan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_masuk"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="Masuk"
+            android:textColor="@color/black" />
+        <!-- 4. Museum Perjuangan -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/museumperjuangan" /> <!-- Ganti dengan file foto perjuangan kamu -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Museum Perjuangan"
+            android:textColor="#1A1A40"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/btnMasukPerjuangan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg_button_masuk"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="Masuk"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</ScrollView>
