@@ -49,8 +49,22 @@ public class RegisterActivity extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword(emailFormat, password)
                     .addOnCompleteListener(this, task -> {
                         if (task.isSuccessful()) {
-                            Toast.makeText(RegisterActivity.this, "Akun berhasil dibuat!", Toast.LENGTH_SHORT).show();
-                            finish(); // Kembali ke halaman Login
+                            // Add Name to Firebase Profile
+                            com.google.firebase.auth.FirebaseUser user = mAuth.getCurrentUser();
+                            if (user != null) {
+                                com.google.firebase.auth.UserProfileChangeRequest profileUpdates = new com.google.firebase.auth.UserProfileChangeRequest.Builder()
+                                        .setDisplayName(nama)
+                                        .build();
+
+                                user.updateProfile(profileUpdates)
+                                        .addOnCompleteListener(profileTask -> {
+                                            Toast.makeText(RegisterActivity.this, "Akun berhasil dibuat!", Toast.LENGTH_SHORT).show();
+                                            finish(); // Kembali ke halaman Login
+                                        });
+                            } else {
+                                Toast.makeText(RegisterActivity.this, "Akun berhasil dibuat!", Toast.LENGTH_SHORT).show();
+                                finish();
+                            }
                         } else {
                             Toast.makeText(RegisterActivity.this, "Gagal: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
