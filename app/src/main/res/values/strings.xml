@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GoMeseum Sulsel</string>
+    <string name="default_greeting">Halo, Pengguna!</string>
+    <string name="profile_icon_desc">User Profile</string>
 </resources>
