@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profil Pengguna"
+        android:text="@string/profile_title"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email / Username"
+        android:text="@string/email_username_label"
         android:textColor="@color/black" />
 
     <TextView
@@ -28,14 +28,14 @@
         android:layout_height="wrap_content"
         android:padding="12dp"
         android:text="user@email.com"
-        android:background="#EEEEEE"
+        android:background="@color/color_gray_bg"
         android:layout_marginBottom="16dp"
         android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama"
+        android:text="@string/name_label"
         android:textColor="@color/black"/>
 
     <EditText
@@ -51,14 +51,14 @@
         android:id="@+id/btnSaveProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simpan Perubahan"
+        android:text="@string/save_changes"
         android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btnLogoutProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:backgroundTint="#D32F2F"/>
+        android:text="@string/logout"
+        android:backgroundTint="@color/color_red_logout"/>
 
 </LinearLayout>

@@ -50,7 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
         
         String newName = etNameProfile.getText().toString().trim();
         if (newName.isEmpty()) {
-            Toast.makeText(this, "Nama tidak boleh kosong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_name_empty), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -61,9 +61,9 @@ public class ProfileActivity extends AppCompatActivity {
         user.updateProfile(profileUpdates)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        Toast.makeText(ProfileActivity.this, "Profil berhasil diperbarui", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProfileActivity.this, getString(R.string.profile_update_success), Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(ProfileActivity.this, "Gagal memperbarui profil", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProfileActivity.this, getString(R.string.profile_update_failed), Toast.LENGTH_SHORT).show();
                     }
                 });
     }

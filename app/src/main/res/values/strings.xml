@@ -2,4 +2,14 @@
     <string name="app_name">GoMeseum Sulsel</string>
     <string name="default_greeting">Halo, Pengguna!</string>
     <string name="profile_icon_desc">User Profile</string>
+    <string name="greeting">Halo, %1$s!</string>
+    <string name="greeting_default">Halo!</string>
+    <string name="error_name_empty">Nama tidak boleh kosong</string>
+    <string name="profile_update_success">Profil berhasil diperbarui</string>
+    <string name="profile_update_failed">Gagal memperbarui profil</string>
+    <string name="profile_title">Profil Pengguna</string>
+    <string name="email_username_label">Email / Username</string>
+    <string name="name_label">Nama</string>
+    <string name="save_changes">Simpan Perubahan</string>
+    <string name="logout">Logout</string>
 </resources>

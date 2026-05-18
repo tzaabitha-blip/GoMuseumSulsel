@@ -26,9 +26,9 @@ public class HomeActivity extends AppCompatActivity {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null && currentUser.getDisplayName() != null && !currentUser.getDisplayName().isEmpty()) {
-            tvGreetingHome.setText("Halo, " + currentUser.getDisplayName() + "!");
+            tvGreetingHome.setText(getString(R.string.greeting, currentUser.getDisplayName()));
         } else {
-            tvGreetingHome.setText("Halo!");
+            tvGreetingHome.setText(getString(R.string.greeting_default));
         }
 
         ivProfileIcon.setOnClickListener(v -> {
