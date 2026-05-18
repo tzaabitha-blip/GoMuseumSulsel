@@ -2,8 +2,11 @@ package com.kelompok2.gomeseumsulsel;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -17,6 +20,21 @@ public class HomeActivity extends AppCompatActivity {
         TextView btnBudaya = findViewById(R.id.btnMasukBudaya);
         TextView btnKerajaan = findViewById(R.id.btnMasukKerajaan);
         TextView btnPerjuangan = findViewById(R.id.btnMasukPerjuangan);
+
+        TextView tvGreetingHome = findViewById(R.id.tvGreetingHome);
+        ImageView ivProfileIcon = findViewById(R.id.ivProfileIcon);
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null && currentUser.getDisplayName() != null && !currentUser.getDisplayName().isEmpty()) {
+            tvGreetingHome.setText("Halo, " + currentUser.getDisplayName() + "!");
+        } else {
+            tvGreetingHome.setText("Halo!");
+        }
+
+        ivProfileIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
 
         // Perintah klik untuk setiap kategori
         btnSejarah.setOnClickListener(v -> bukaDaftar("Sejarah"));
